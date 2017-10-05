@@ -40,6 +40,6 @@ RUN pip install --no-cache-dir -r /requirements.txt \
 ADD . /app
 WORKDIR /app
 
-EXPOSE 8080
+EXPOSE 80
 
 CMD omnic runserver

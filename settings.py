@@ -3,20 +3,22 @@ import os
 ##### Web server settings
 
 HOST = os.environ.get('HOST', '127.0.0.1')
-PORT = os.environ.get('PORT', 8080)
+PORT = int(os.environ.get('DOKKU_DOCKERFILE_PORTS', '8080'))
 DEBUG = os.environ.get('OMNIC_ENV', 'dev') == 'prod'
+
+if os.environ.get('DOKKU_APP_TYPE'):
+    DEBUG = False
 
 
 ##### Security settings
 
-# Whitelist allowed foreign hosts. This should point to your app servers, your
-# CDN, or cloud hosting such as your S3 buckets.
 ALLOWED_LOCATIONS = {
     'github.com',
     'michaelb.org',
     'omnic.michaelb.org',
     'whiteboard.michaelb.org',
     'openlab.org',
+    'omnic.openlab.org',
     'michaelpb.github.io',
 }
 

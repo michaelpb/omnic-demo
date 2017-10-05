@@ -69,3 +69,5 @@ omnic.egg-info/
 
 dist/
 build/
+
+env
