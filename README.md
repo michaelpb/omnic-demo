@@ -1,4 +1,5 @@
 # omnic-demo
+
 Demo server configuration
 
 ## Setting up a dev environment
