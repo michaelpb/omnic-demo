@@ -6,6 +6,9 @@ HOST = os.environ.get('HOST', '127.0.0.1')
 PORT = int(os.environ.get('DOKKU_DOCKERFILE_PORTS', '8080'))
 DEBUG = os.environ.get('OMNIC_ENV', 'dev') == 'prod'
 
+EXTERNAL_HOST = os.environ.get('DOMAIN') or None
+EXTERNAL_PORT = 80
+
 if os.environ.get('DOKKU_APP_TYPE'):
     DEBUG = False
 
@@ -18,7 +21,6 @@ ALLOWED_LOCATIONS = {
     'omnic.michaelb.org',
     'whiteboard.michaelb.org',
     'openlab.org',
-    'omnic.openlab.org',
     'michaelpb.github.io',
 }
 
