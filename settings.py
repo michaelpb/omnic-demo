@@ -22,6 +22,7 @@ ALLOWED_LOCATIONS = {
     'whiteboard.michaelb.org',
     'openlab.org',
     'michaelpb.github.io',
+    'raw.githubusercontent.com',
 }
 
 
