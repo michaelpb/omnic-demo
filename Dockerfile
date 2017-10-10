@@ -17,7 +17,9 @@ RUN apt-get update && apt-get install -y \
     imagemagick=8:6.9.7.4+dfsg-11+deb9u1 \
     inkscape=0.92.1-1 \
     meshlab=1.3.2+dfsg1-3 \
-    nodejs \
+    ffmpeg=7:3.2.7-1~deb9u1 \
+    ffmpegthumbnailer=2.1.1-0.1+b3 \
+    nodejs=6* \
     openbabel=2.3.2+dfsg-3 \
     unoconv=0.7-1.1
 
