@@ -1,5 +1,4 @@
-# Omnic itself:
-omnic==0.1.15
+omnic==0.1.16
 
 # Hard dependencies:
 python-magic==0.4.13
